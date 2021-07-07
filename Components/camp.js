@@ -25,7 +25,7 @@ Vue.component('camp', {
         setFormat() {
             switch(this.tipus) {
                 case 'nom':
-                    this.nom = 'Nom i Cognoms';
+                    this.nom = 'Nom';
                     this.format = 'text';
                     this.alerta = 'El nom ha de tenir entre 6 i 13 caràcters';
                     this.regex = /^[a-zA-Z0-9\_\-]{6,13}$/;
