@@ -8,6 +8,7 @@ Vue.component('camp', {
             <input :type="format" v-model="info" class="camp ml-2">
             <small id="validesaOk" class="text-success form-text" v-if="valid" style="margin-left:-20px"><i class="fas fa-check-circle"></i></small>
             <small id="validesaMal" class="text-danger form-text invisible" v-else style="margin-left:-20px"><i class="fas fa-times-circle"></i></small>
+            <!-- Dubte: quina seria la manera més elegant per posar les icones dins el camp de l'input? -->
         </div>
         <small id="alert" class="text-muted form-text">{{alerta}}</small>
     </div>

@@ -31,9 +31,12 @@ Vue.component('form-vue', {
     }, methods: {
         formulari() {
             if (this.nom_ok && this.mobil_ok && this.cpostal_ok && this.mail_ok && this.pass1_ok && this.pass2_ok) {
-                alert("Felicitats! Tots els camps compleixen els paràmetres de validació. Dades enviades.");
+                alert(`Felicitats! Tots els camps compleixen els paràmetres de validació. Dades enviades:
+                \n Nom: ${this.nom} \n Mobil: ${this.mobil}\n Codi Postal: ${this.cpostal} \n Correu: ${this.mail} \n Contrassenya: ${this.pass1}`);
+                //Mostro les dades per comprovar que han arribat al pare, però això no es mostraria en una web real
+                //I enlloc d'alerts es podria fer una redirecció a una altra pàgina o mostrar un modal
             } else {
-                alert("Ostres! Algun camp no compleix els paràmetres de validació. Revisa els camps i torna-ho a provar.");
+                alert(`Ostres! Algun camp no compleix els paràmetres de validació. Revisa els camps i torna-ho a provar.`);
             }
         }
     }
